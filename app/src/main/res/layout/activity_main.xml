@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+
+<!--    <include-->
+<!--        android:id="@+id/toolbar"-->
+<!--        layout="@layout/custom_toolbar" />-->
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:gravity="right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:textColor="#FFFF"
+        android:background="@color/colorPrimary"
+        android:onClick="GotoSave"
+        android:text="+"
+        android:textSize="44sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+<!--        <EditText-->
+<!--            android:id="@+id/NoteTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Note Title" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/NoteItem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Note Item" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSave"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:text="Add"-->
+<!--            android:textColor="#FFFF" />-->
+
+<!--        <android.support.v7.widget.CardView-->
+<!--            app:cardBackgroundColor="@color/light_color"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:elevation="3dp">-->
+
+<!--            <ListView-->
+<!--                android:id="@+id/itemList"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </android.support.v7.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="3dp">
+
+        <ExpandableListView
+            android:id="@+id/expandable_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+<!--    android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"-->
+<!--    android:divider="@android:color/darker_gray"-->
+</LinearLayout>
